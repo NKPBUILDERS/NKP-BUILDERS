@@ -123,7 +123,7 @@ export default function App() {
   // Open Quote with pre-selected service
   const openQuoteWithService = (serviceName: string) => {
     setQuoteService(serviceName);
-    setQuoteForm((prev) => ({ ...prev, service: serviceName || "Turnkey Civil Construction" }));
+    setQuoteForm((prev) => ({ ...prev, service: serviceName || "Civil Construction" }));
     setIsQuoteModalOpen(true);
     setQuoteSuccessMsg("");
     setQuoteTicket("");
@@ -160,7 +160,7 @@ export default function App() {
           details: "",
         });
       } else {
-        setQuoteSuccessMsg("Submission failed. Please call Er. Prabhakaran at +91 96775 45615.");
+        setQuoteSuccessMsg("Submission failed. Please call Mr.Praveen Kumar at +91 96775 45615.");
       }
     } catch (err) {
       console.error(err);
@@ -409,11 +409,17 @@ export default function App() {
                     onChange={(e) => setQuoteForm({ ...quoteForm, service: e.target.value })}
                     className="bg-slate-50 border border-slate-200 rounded-lg px-4 py-2.5 text-xs focus:outline-none focus:border-amber-500 font-semibold text-slate-800"
                   >
-                    <option value="Turnkey Civil Construction">Turnkey Civil Construction</option>
+                    <option value="Turnkey Civil Construction">Civil Construction</option>
                     <option value="Waterproofing Membrane Treatment">Dam Sheath Waterproofing</option>
                     <option value="Asian Paints Exterior Coats">Asian Paints Weather protection</option>
                     <option value="Luxury Interior Renovation">Luxury Interior fit-outs</option>
                     <option value="Building Concrete Maintenance">Building Structural Repair</option>
+                    <option value="Building Concrete Maintenance">Electrical</option>
+                    <option value="Building Concrete Maintenance">Plumbing</option>
+                    <option value="Building Concrete Maintenance">Painting</option>
+                    <option value="Building Concrete Maintenance">Gardaning</option>
+                    <option value="Building Concrete Maintenance">Building Renovation</option>
+                    <option value="Building Concrete Maintenance">Wood Work</option>
                   </select>
                 </div>
 
