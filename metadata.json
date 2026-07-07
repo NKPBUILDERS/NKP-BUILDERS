@@ -1,0 +1,6 @@
+{
+  "name": "NKP Builders",
+  "description": "Premium construction, interior, exterior painting, renovation, waterproofing, and building maintenance services in Chengalpattu and Tamil Nadu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
